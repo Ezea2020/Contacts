@@ -52,7 +52,6 @@ CREATE TABLE C_ADDRESS (
 
 CREATE TABLE USER (
   ID_user bigint auto_increment,
-  username varchar(30),
   password varchar(64),
   email varchar(60),
   name varchar(30),
