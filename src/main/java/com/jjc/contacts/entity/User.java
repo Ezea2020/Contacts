@@ -18,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "USER")
+@Table(name = "t_USER")
 public class User {
 
     @Id
@@ -29,8 +29,10 @@ public class User {
     private String email;
     private String name;
     private String surname;
+    @Column(name = "dt_register_date")
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date registerDate;
+    @Column(name = "dt_last_modification")
     @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date lastModification;
 
